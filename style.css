@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+/*global styles*/
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 20px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 20px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 15px;
+  width: fit-content;
+}
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 15px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 375px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    width: 90%;
+  }
+}
+p {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+button:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 375px) {
+  button {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+}
+/*global styles*/
+#page {
+  max-width: 1440px;
+  background-image: url("images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  padding-top: 50px;
+}
+@media screen and (max-width: 375px) {
+  #page {
+    max-width: 375px;
+    padding: 30px 15px;
+    background-image: url("images/bg-header-mobile.png");
+    background-size: 100%;
+    text-align: center;
+  }
+}
+/*header styles*/
+header > div {
+  text-align: center;
+  margin-bottom: 40px;
+}
+header p {
+  width: 410px;
+}
+@media screen and (max-width: 375px) {
+  header p {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .logo {
+    width: 100%;
+  }
+}
+.btn-container {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.ios {
+  background-color: hsl(171, 66%, 44%);
+}
+.mac {
+  background-color: hsl(233, 100%, 69%);
+}
+
+/*end of header*/
+/*start of track section*/
+#track {
+  margin-bottom: 60px;
+}
+#track p {
+  width: 410px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 375px) {
+  #track p {
+    width: 90%;
+  }
+}
+#info {
+  display: flex;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 375px) {
+  #info {
+    display: block;
+    width: 100%;
+  }
+}
+#info > div {
+  width: 40%;
+}
+@media screen and (max-width: 375px) {
+  #info > div {
+    display: block;
+    width: 100%;
+  }
+}
+.img {
+  margin-right: 30px;
+}
+.img img {
+  width: 100%;
+  vertical-align: center;
+}
+
+#track .info h3 {
+  text-align: left;
+}
+#track .info p {
+  text-align: left;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 375px) {
+  #track .info h3,
+  #track .info p {
+    text-align: center;
+  }
+}
+
+/*end of track setion*/
+
+/*start of access section*/
+#access p {
+  width: 400px;
+}
+@media screen and (max-width: 375px) {
+  #access p {
+    width: 90%;
+  }
+}
+#access .access-img {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 375px) {
+  #access .access-img {
+    width: 100%;
+  }
+}
+.access-img img {
+  width: 100%;
+}
+
+/*end of access section*/
+
+/*end of work section*/
+.work,
+.logo-images {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 375px) {
+  .work,
+  .logo-images {
+    display: block;
+    width: 100%;
+  }
+}
+.work > div {
+  margin-right: 15px;
+}
+.work > div:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 375px) {
+  .work > div {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+.work > div h4 {
+  text-align: center;
+}
+.work > div img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  width: 32px;
+  height: 32px;
+}
+.logo-images img {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 375px) {
+  .logo-images img {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.logo-images img:last-child {
+  margin-right: 0px;
+}
+@media screen and (max-width: 375px) {
+  .logo-images img:last-child {
+    margin-right: auto;
+  }
+}
+/*end of work section*/
+
+/*start of download section*/
+
+#download p {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 375px) {
+  #download p {
+    width: 90%;
+  }
+}
+
+/*end of download section*/
+
+/*start of div-footer*/
+#footer {
+  margin-top: 50px;
+  background-color: hsl(201, 11%, 66%, 0.1);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 375px) {
+  #footer {
+    display: block;
+    width: 100%;
+  }
+}
+#footer img {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+@media screen and (max-width: 375px) {
+  #footer img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+.links ul {
+  display: flex;
+}
+@media screen and (max-width: 375px) {
+  .links ul {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+}
+#footer span {
+  display: inline-block;
+  margin-right: 29px;
+}
+@media screen and (max-width: 375px) {
+  #footer span {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+#footer span:last-child {
+  margin-right: 0px;
+}
+@media screen and (max-width: 375px) {
+  .links {
+    margin-bottom: 30px;
+  }
+}
+.links a {
+  display: inline-block;
+  font-size: 12px;
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+}
+@media screen and (max-width: 375px) {
+  .links a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+.social a {
+  display: inline-block;
+  text-align: center;
+  margin-right: 15px;
+}
+.social a:last-child {
+  margin-right: 0px;
+}
+.social a i {
+  display: block;
+  color: hsl(210, 10%, 33%);
+}
+.links a:hover,
+.social a:hover i {
+  color: hsl(171, 66%, 44%);
+}
+/*end of div-footer*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
